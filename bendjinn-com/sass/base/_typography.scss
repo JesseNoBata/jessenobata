@@ -1,0 +1,101 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-smoke-grey;
+    background-color: rgba($color-primary-black, 1);
+
+    padding-top: 30px; /*from 4rem*/
+    margin:0; /* no border*/
+    padding-bottom: 10rem;
+}
+
+
+
+.header__logo-box{
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 7rem;
+    height: 7rem;
+    opacity: 0.2;
+    background: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.heading-primary{
+    color: 	$color-shadow-black ;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+
+    &--main{
+        display: block;
+        font-size: 5.2rem;
+        font-weight: 400;
+        color: $color-smoke-white;
+        letter-spacing: 3.5rem;
+        text-indent: 3.8rem;
+
+        text-shadow: .4rem .4rem .2rem $color-smoke-black;
+
+        animation-name: moveInBottom;
+        animation-duration: 3s;
+
+    }
+    &--sub{
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .53rem; /*8.3*/
+        color: $color-shadow-black;
+        text-shadow: .2rem .2rem .2rem #383838;
+      
+        animation-name: moveInBottom;
+        animation-duration: 3.5s;
+      
+      }
+}
+
+
+@include clearfix;
+
+.heading-story-type{
+    position: relative;
+    
+    z-index:20;
+    top:5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    font-family: 'Metal Mania';
+    background-color: $color-dnd-red;
+    padding-left: 6rem;
+    padding-right: 3rem;
+    
+    //background-image: linear-gradient(to right, $color-primary-red, $color-dnd-red);
+    //-webkit-background-clip: text;
+    //olor: transparent;
+    letter-spacing: 2px;
+    //transition: all .2s;
+    color: $color-smoke-white;
+
+    &:hover{
+        //transform: skewY(2deg) skewX(15deg) scale(1.1);
+        //text-shadow: .5rem 1rem 2rem rgba($color-smoke-black,0.2);
+    }
+}
+
+.paragraph{
+    font-size:$default-font-size;
+    &:not(:last-child){
+        margin-bottom:2rem;
+    }
+    //background-color: $color-smoke-white;
+}

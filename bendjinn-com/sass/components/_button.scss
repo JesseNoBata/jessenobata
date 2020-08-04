@@ -1,0 +1,118 @@
+.btn{
+
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        font-family: 'Tillana';
+        font-style: normal;
+        font-weight: 700;
+        transition: all .3s; /*- not good - makes likes momentary look ugly*/
+        position: relative;
+        font-size: 1.6rem;
+      
+    }
+    &:hover{
+        /*transform: translateY(-3px);*/
+        box-shadow: 0 .5rem 1rem  $color-primary-white;
+
+        &::after{
+            /*transform: scaleX(1.4) scaleY(1.6);*/
+            opacity: 0;
+        }
+    }
+    &:active{
+        /*transform: translateY(-1px);*/
+        box-shadow: 0 .5rem .5rem $color-smoke-grey; 
+    }
+    &--whitesmoke{
+        background-color: $color-primary-black;
+        color: $color-primary-white;
+
+
+        animation: moveInBottom 3.0s ease-out .75s;
+        animation-fill-mode: backwards;
+
+
+        &::after{
+            background-color: $color-primary-black;
+        }
+
+
+        
+    }
+    &::after{
+        /*pseudo-element, hidden behind active*/
+        content: ""; /*required*/
+        display: inline-block; /*matches original */
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;/*behind button*/
+        transition: all .4s;
+    }
+
+
+
+
+}
+
+
+.btn-story{
+    &:link,
+    &:visited{
+        font-size: $default-font-size;
+        color: $color-smoke-white;
+        display: inline-block;
+        text-decoration: none;
+        //border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .4s;
+    }
+    &:hover{
+        background-color: $color-dnd-red;
+        background-color: $color-smoke-white;
+        color:$color-dnd-red;
+        box-shadow: 0 1rem 2rem rgba($color-primary-black,.15);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-primary-black,.15);
+        transform: translateY(0);
+    }
+}
+
+
+.btn-story-header{
+    &:link,
+    &:visited{
+        font-size: $default-font-size;
+        color: $color-dnd-red;
+        display: inline-block;
+        text-decoration: none;
+        //border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+        font-size: 2.5rem;
+        font-family: "Sanchez";
+        color: $color-smoke-white;
+    }
+    &:hover{
+        //background-color: $color-dnd-red;
+        //color: $color-dnd-red;
+        //box-shadow: 0 1rem 2rem rgba($color-smoke-grey,.15);
+        transform: translateY(-2px);
+        color: $color-primary-white;
+        text-shadow: 4px 4px 2px $color-primary-black;
+    }
+    &:active{
+        //box-shadow: 0 .5rem 1rem rgba($color-primary-black,.15);
+        transform: translateY(0);
+    }
+}

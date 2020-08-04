@@ -1,0 +1,18 @@
+.composition{
+    position: relative;
+
+
+    &__photo{
+        z-index:10; 
+        width:100%;
+        
+  
+        
+    }
+
+    &:hover{
+        box-shadow: 0 2.5rem 4rem rgba($color-dnd-red,.5);
+        transform:scale(1.05)
+    }
+   
+}

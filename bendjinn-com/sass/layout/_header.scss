@@ -1,0 +1,40 @@
+
+.header{
+    /*1a-set view height*/
+    height: 95vh; /* 95% of view height */
+    width: 100%;
+    padding:0;
+    margin:0;
+
+ 
+    
+
+    background-image: linear-gradient( /*1b-set background image an opaque overlay (0.8) that is gradient*/
+      to left bottom,
+       rgba($color-primary-black, .8),
+       rgba($color-primary-white, .8)),
+        url(../img/dark2.jpg);
+    /*1c set up colors and fonts*/
+    background-size: cover ;
+    font-family: 'Metal Mania', cursive;
+    background-position: top;/*image top will stay the same*/
+
+    position: relative; 
+   
+    /* clip-path: polygon(10% 0, 90% 0, 90% 85%, 10% 100%); */
+    clip-path: polygon(0% 0, 100% 0, 100% 85%, 0% 100%);
+
+    .header__logo-box:hover{
+        opacity: 1;
+        transition: all 0.4s ease;  
+    }
+    
+    .header__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center; /*center the FREE D&D Content*/
+    }
+
+}

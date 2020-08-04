@@ -1,0 +1,570 @@
+*::after,
+*before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* balsamiq-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Balsamiq Sans Regular"), local("BalsamiqSans-Regular"), url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.woff") format("woff"), url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/balsamiq-sans-v1-latin_cyrillic-regular.svg#BalsamiqSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* metal-mania-regular - latin */
+@font-face {
+  font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/metal-mania-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Metal Mania"), local("MetalMania-Regular"), url("../fonts/metal-mania-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/metal-mania-v9-latin-regular.woff2") format("woff2"), url("../fonts/metal-mania-v9-latin-regular.woff") format("woff"), url("../fonts/metal-mania-v9-latin-regular.ttf") format("truetype"), url("../fonts/metal-mania-v9-latin-regular.svg#MetalMania") format("svg");
+  /* Legacy iOS */
+}
+
+/* titillium-web-200 - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/titillium-web-v8-latin-200.eot");
+  /* IE9 Compat Modes */
+  src: local("Titillium Web ExtraLight"), local("TitilliumWeb-ExtraLight"), url("../fonts/titillium-web-v8-latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/titillium-web-v8-latin-200.woff2") format("woff2"), url("../fonts/titillium-web-v8-latin-200.woff") format("woff"), url("../fonts/titillium-web-v8-latin-200.ttf") format("truetype"), url("../fonts/titillium-web-v8-latin-200.svg#TitilliumWeb") format("svg");
+  /* Legacy iOS */
+}
+
+/* titillium-web-regular - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/titillium-web-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"), url("../fonts/titillium-web-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/titillium-web-v8-latin-regular.woff2") format("woff2"), url("../fonts/titillium-web-v8-latin-regular.woff") format("woff"), url("../fonts/titillium-web-v8-latin-regular.ttf") format("truetype"), url("../fonts/titillium-web-v8-latin-regular.svg#TitilliumWeb") format("svg");
+  /* Legacy iOS */
+}
+
+/* piedra-regular - latin */
+@font-face {
+  font-family: 'Piedra';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/piedra-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Piedra Regular"), local("Piedra-Regular"), url("../fonts/piedra-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/piedra-v8-latin-regular.woff2") format("woff2"), url("../fonts/piedra-v8-latin-regular.woff") format("woff"), url("../fonts/piedra-v8-latin-regular.ttf") format("truetype"), url("../fonts/piedra-v8-latin-regular.svg#Piedra") format("svg");
+  /* Legacy iOS */
+}
+
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/libre-baskerville-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Libre Baskerville"), local("LibreBaskerville-Regular"), url("../fonts/libre-baskerville-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-baskerville-v7-latin-regular.woff2") format("woff2"), url("../fonts/libre-baskerville-v7-latin-regular.woff") format("woff"), url("../fonts/libre-baskerville-v7-latin-regular.ttf") format("truetype"), url("../fonts/libre-baskerville-v7-latin-regular.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-100 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/lato-v16-latin-100.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Hairline"), local("Lato-Hairline"), url("../fonts/lato-v16-latin-100.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v16-latin-100.woff2") format("woff2"), url("../fonts/lato-v16-latin-100.woff") format("woff"), url("../fonts/lato-v16-latin-100.ttf") format("truetype"), url("../fonts/lato-v16-latin-100.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v16-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v16-latin-regular.woff2") format("woff2"), url("../fonts/lato-v16-latin-regular.woff") format("woff"), url("../fonts/lato-v16-latin-regular.ttf") format("truetype"), url("../fonts/lato-v16-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* tillana-regular - latin */
+@font-face {
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/tillana-v5-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Tillana Regular"), local("Tillana-Regular"), url("../fonts/tillana-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/tillana-v5-latin-regular.woff2") format("woff2"), url("../fonts/tillana-v5-latin-regular.woff") format("woff"), url("../fonts/tillana-v5-latin-regular.ttf") format("truetype"), url("../fonts/tillana-v5-latin-regular.svg#Tillana") format("svg");
+  /* Legacy iOS */
+}
+
+/* tillana-500 - latin */
+@font-face {
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/tillana-v5-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Tillana Medium"), local("Tillana-Medium"), url("../fonts/tillana-v5-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/tillana-v5-latin-500.woff2") format("woff2"), url("../fonts/tillana-v5-latin-500.woff") format("woff"), url("../fonts/tillana-v5-latin-500.ttf") format("truetype"), url("../fonts/tillana-v5-latin-500.svg#Tillana") format("svg");
+  /* Legacy iOS */
+}
+
+/* tillana-600 - latin */
+@font-face {
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/tillana-v5-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local("Tillana SemiBold"), local("Tillana-SemiBold"), url("../fonts/tillana-v5-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/tillana-v5-latin-600.woff2") format("woff2"), url("../fonts/tillana-v5-latin-600.woff") format("woff"), url("../fonts/tillana-v5-latin-600.ttf") format("truetype"), url("../fonts/tillana-v5-latin-600.svg#Tillana") format("svg");
+  /* Legacy iOS */
+}
+
+/* tillana-700 - latin */
+@font-face {
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/tillana-v5-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Tillana Bold"), local("Tillana-Bold"), url("../fonts/tillana-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/tillana-v5-latin-700.woff2") format("woff2"), url("../fonts/tillana-v5-latin-700.woff") format("woff"), url("../fonts/tillana-v5-latin-700.ttf") format("truetype"), url("../fonts/tillana-v5-latin-700.svg#Tillana") format("svg");
+  /* Legacy iOS */
+}
+
+/* tillana-800 - latin */
+@font-face {
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/tillana-v5-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local("Tillana ExtraBold"), local("Tillana-ExtraBold"), url("../fonts/tillana-v5-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/tillana-v5-latin-800.woff2") format("woff2"), url("../fonts/tillana-v5-latin-800.woff") format("woff"), url("../fonts/tillana-v5-latin-800.ttf") format("truetype"), url("../fonts/tillana-v5-latin-800.svg#Tillana") format("svg");
+  /* Legacy iOS */
+}
+
+/* sanchez-regular - latin */
+@font-face {
+  font-family: 'Sanchez';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sanchez-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Sanchez"), local("Sanchez-Regular"), url("../fonts/sanchez-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/sanchez-v7-latin-regular.woff2") format("woff2"), url("../fonts/sanchez-v7-latin-regular.woff") format("woff"), url("../fonts/sanchez-v7-latin-regular.ttf") format("truetype"), url("../fonts/sanchez-v7-latin-regular.svg#Sanchez") format("svg");
+  /* Legacy iOS */
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777777;
+  background-color: black;
+  padding-top: 30px;
+  /*from 4rem*/
+  margin: 0;
+  /* no border*/
+  padding-bottom: 10rem;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 10%;
+  left: 16%;
+  width: 7rem;
+  height: 7rem;
+  opacity: 0.2;
+  background: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.heading-primary {
+  color: #181818;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 5.2rem;
+  font-weight: 400;
+  color: #F5F5F5;
+  letter-spacing: 3.5rem;
+  text-indent: 3.8rem;
+  text-shadow: 0.4rem 0.4rem 0.2rem #383838;
+  -webkit-animation-name: moveInBottom;
+          animation-name: moveInBottom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .53rem;
+  /*8.3*/
+  color: #181818;
+  text-shadow: .2rem .2rem .2rem #383838;
+  -webkit-animation-name: moveInBottom;
+          animation-name: moveInBottom;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-story-type {
+  position: relative;
+  z-index: 20;
+  top: 5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  font-family: 'Metal Mania';
+  background-color: #8b0000;
+  padding-left: 6rem;
+  padding-right: 3rem;
+  letter-spacing: 2px;
+  color: #F5F5F5;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: .1rem;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-family: 'Tillana';
+  font-style: normal;
+  font-weight: 700;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  /*- not good - makes likes momentary look ugly*/
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  /*transform: translateY(-3px);*/
+  -webkit-box-shadow: 0 0.5rem 1rem #dcdcdc;
+          box-shadow: 0 0.5rem 1rem #dcdcdc;
+}
+
+.btn:hover::after {
+  /*transform: scaleX(1.4) scaleY(1.6);*/
+  opacity: 0;
+}
+
+.btn:active {
+  /*transform: translateY(-1px);*/
+  -webkit-box-shadow: 0 0.5rem 0.5rem #777777;
+          box-shadow: 0 0.5rem 0.5rem #777777;
+}
+
+.btn--whitesmoke {
+  background-color: #000000;
+  color: #dcdcdc;
+  -webkit-animation: moveInBottom 3.0s ease-out .75s;
+          animation: moveInBottom 3.0s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.btn--whitesmoke::after {
+  background-color: #000000;
+}
+
+.btn::after {
+  /*pseudo-element, hidden behind active*/
+  content: "";
+  /*required*/
+  display: inline-block;
+  /*matches original */
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*behind button*/
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn-story:link, .btn-story:visited {
+  font-size: 1.6rem;
+  color: #F5F5F5;
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn-story:hover {
+  background-color: #8b0000;
+  background-color: #F5F5F5;
+  color: #8b0000;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.btn-story:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.btn-story-header:link, .btn-story-header:visited {
+  font-size: 1.6rem;
+  color: #8b0000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-size: 2.5rem;
+  font-family: "Sanchez";
+  color: #F5F5F5;
+}
+
+.btn-story-header:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #dcdcdc;
+  text-shadow: 4px 4px 2px #000000;
+}
+
+.btn-story-header:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  z-index: 10;
+  width: 100%;
+}
+
+.composition:hover {
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(139, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(139, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  z-index: 9999;
+  /*src: https://forum.freecodecamp.org/t/why-is-my-navbar-behind-other-content/62059*/
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Metal Mania', cursive;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #F5F5F5;
+  color: #383838;
+}
+
+.row {
+  max-width: 89%;
+  margin: 0 auto;
+  /*center block -0 top/bottom, auto left/right */
+  position: relative;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  /*select all class atrributes that start with col*/
+  /*^= is beginnning*/
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem)/2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem)/3);
+}
+
+.row .col-2-of-3 {
+  width: calc((2 * (100% - 2 * 6rem)/3) + 6rem);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem)/4);
+}
+
+.row .col-2-of-4 {
+  width: calc(( 2 *   (100% - 3 * 6rem)/4)  + 6rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(( 3 *   (100% - 3 * 6rem)/4)  + 2 * 6rem);
+}
+
+.header {
+  /*1a-set view height*/
+  height: 95vh;
+  /* 95% of view height */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(220, 220, 220, 0.8))), url(../img/dark2.jpg);
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.8), rgba(220, 220, 220, 0.8)), url(../img/dark2.jpg);
+  /*1c set up colors and fonts*/
+  background-size: cover;
+  font-family: 'Metal Mania', cursive;
+  background-position: top;
+  /*image top will stay the same*/
+  position: relative;
+  /* clip-path: polygon(10% 0, 90% 0, 90% 85%, 10% 100%); */
+  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 85%, 0% 100%);
+          clip-path: polygon(0% 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.header .header__logo-box:hover {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  /*center the FREE D&D Content*/
+}
+
+.section-story-panel {
+  background-color: #181818;
+  /*background-color: $color-smoke-white;*/
+  padding: 25rem 0;
+  margin-top: -30vh;
+}
+/*# sourceMappingURL=main.css.map */
