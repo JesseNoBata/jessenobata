@@ -1,0 +1,19 @@
+
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: inherit
+
+}
+html{
+    // This defines what 1rem is */
+    font-size: 62.5%; /*1 rem = exactly 10 pixels -easy*/
+}
+body {
+    padding-top: $nav-bar-top-height + 2rem; // room for our navbar
+    padding-bottom: $footer-top-height * 4;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}

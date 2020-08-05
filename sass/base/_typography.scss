@@ -1,0 +1,42 @@
+body {
+    //font-family: "Lato", sans-serif;
+    //font-weight: 400;
+    //font-size: 1.6rem;
+    //line-height: 1.7;
+    color:$color-fiesty-white;
+    background-color: rgba( $color-fiesty-black, 1);
+
+    //padding-top: 30px; /*from 4rem*/
+    margin:0; /* no border*/
+    //padding-bottom: 10rem;
+
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Wendy One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    color: $color-fiesty-white;
+}
+
+a{
+    &:link,
+    &:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-fiesty-white;
+    font-family: 'Wendy One';
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    }
+}
+.center-div{
+    text-align: center;
+    ul li{
+        display: block;
+    }
+}
