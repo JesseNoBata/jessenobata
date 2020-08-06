@@ -21,7 +21,13 @@ h1{
     font-size: 4rem;
     color: $color-fiesty-white;
 }
-
+h3{
+    font-family: 'Wendy One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    color: $color-fiesty-red;
+}
 a{
     &:link,
     &:visited{

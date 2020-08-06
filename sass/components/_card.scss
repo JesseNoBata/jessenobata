@@ -1,0 +1,64 @@
+.card{
+    //FUNCTIONALITY
+    
+    height: 40rem; //*keep here
+    transition: all .8s;
+    position: relative;
+    
+    &__side{
+        background-image: linear-gradient(to right bottom, $color-fiesty-white,$color-fiesty-silver);
+        color:#fff;//*remove
+        font-size:2rem;//*remove
+        height: 40rem; //*keep here
+        transition: all .8s;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 4rem rgba($color-fiesty-black,.15);
+        overflow: hidden;/*curve the underlying to the round border edge*/
+    
+    }
+
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    //STYLING
+    &__picture{
+        height:23rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-fiesty-maroon,$color-fiesty-hot-red),
+            url(../img/game.png);
+            
+        }
+    }
+    &__heading{
+        font-family: 'Wendy One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        color: $color-fiesty-red;
+        text-align: center;
+        margin-top:10px;
+        
+        /*
+        position: absolute;
+        top: 20rem;
+        right: 2 rem;*/
+    }
+    &__details{
+        color: $color-fiesty-black;
+        text-align: center;
+    }
+
+}

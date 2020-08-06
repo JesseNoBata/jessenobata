@@ -17,7 +17,20 @@ $color-fiesty-red: #950740;
 $color-fiesty-hot-red: #C3073F;
 $color-fiesty-white: #F5F5F5;
 */
-  
+  .navbar p{
+    float: left;
+    display: block;
+    color: $color-nav-text;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    //font-family: 'Metal Mania', 'Arial Bold';
+    font-family: 'Fira Sans';
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+  }
   /* Links inside the navbar */
   .navbar a {
     float: right;
