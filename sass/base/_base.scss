@@ -13,7 +13,7 @@ html{
 }
 body {
     padding-top: $nav-bar-top-height + 2rem; // room for our navbar
-    padding-bottom: $footer-top-height * 4;
+    //padding-bottom: $footer-top-height * 4; //ADD BACK FOR FIXED FOOTER
     box-sizing: border-box;
     font-size: 1.2rem;
 }

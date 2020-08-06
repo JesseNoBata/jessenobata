@@ -13,7 +13,6 @@ html {
 
 body {
   padding-top: 5rem;
-  padding-bottom: 8rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.2rem;
@@ -270,8 +269,6 @@ $color-fiesty-white: #F5F5F5;
   overflow: hidden;
   background-color: #950740;
   color: #F5F5F5;
-  position: fixed;
-  /* Set the navbar to fixed position */
   bottom: 0;
   /* Position the navbar at the top of the page */
   width: 100%;
@@ -279,8 +276,6 @@ $color-fiesty-white: #F5F5F5;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  z-index: 9999;
-  /*src: https://forum.freecodecamp.org/t/why-is-my-navbar-behind-other-content/62059*/
 }
 
 .row {
@@ -335,6 +330,8 @@ $color-fiesty-white: #F5F5F5;
 
 .section-projects {
   background-color: #6F2232;
-  padding: 1rem 0 5rem 0;
+  padding: .1rem 0 5rem 0;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
